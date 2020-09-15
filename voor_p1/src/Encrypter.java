@@ -36,9 +36,7 @@ public class Encrypter {
         }
     }
     private String intArrayToString(int[] encryptInt) {
-        int encryptedNum;
-
-        encryptedNum = encryptInt[0]*1000 + encryptInt[1]*100 + encryptInt[2]*10 + encryptInt[3];		//convert to single value return output
+        int encryptedNum = encryptInt[0]*1000 + encryptInt[1]*100 + encryptInt[2]*10 + encryptInt[3];		//convert to single value return output
         String encryptOutput = Integer.toString(encryptedNum);
         switch(encryptOutput.length()) {                                                                //add leading zeroes
             case 4:

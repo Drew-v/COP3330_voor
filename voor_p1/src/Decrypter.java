@@ -39,9 +39,7 @@ public class Decrypter {
     }
 
     private String intArrayToString(int[] decryptInt) {
-        int decryptedNum;
-
-        decryptedNum = decryptInt[0] * 1000 + decryptInt[1] * 100 + decryptInt[2] * 10 + decryptInt[3];        //convert to single value return output
+        int decryptedNum = decryptInt[0] * 1000 + decryptInt[1] * 100 + decryptInt[2] * 10 + decryptInt[3];        //convert to single value return output
         String decryptOutput = Integer.toString(decryptedNum);
         switch (decryptOutput.length()) {                                                                //add leading zeroes
             case 4:
